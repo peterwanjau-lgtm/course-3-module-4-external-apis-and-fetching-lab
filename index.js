@@ -17,6 +17,7 @@ async function fetchWeather(state) {
             console.log('Error displaying alerts:', error);
             document.getElementById('error-message').textContent = error.message;
         });
+        document.getElementById('pwaweru').value = '';
     }
     catch (error) {
         console.log('inside catch');
